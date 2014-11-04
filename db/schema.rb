@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20141030075442) do
 
   create_table "students", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "first_name",      limit: 255
+    t.string   "last_name",       limit: 255
     t.date     "date_of_birth"
     t.float    "gpa"
     t.integer  "units_completed"
